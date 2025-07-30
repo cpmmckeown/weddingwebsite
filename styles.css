@@ -122,7 +122,7 @@ body {
 }
 
 .LSimage {
-    background: url('Images/liina.jpg') no-repeat center center;
+    background: url('/Images/liina.jpg') no-repeat center center;
     background-size: cover;
     width: 50vw;
     height: 50vh;
