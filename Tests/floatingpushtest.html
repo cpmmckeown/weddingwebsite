@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll with Inertia</title>
+    <style>
+        #moveableDiv {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="moveableDiv"></div>
+
+    <script>
+        const moveableDiv = document.getElementById('moveableDiv');
+        let velocity = 0;    // Current velocity (how fast the div is moving)
+        let force = 0;       // Force applied by the scroll wheel
+        let friction = 0.95; // Friction to reduce velocity over time (less than 1 slows it down)
+        let acceleration = 0.03; // How fast the div moves based on the scroll wheel
+
+        // Update the position of the div in the next frame
+        function update() {
+            // Apply the force to the velocity
+            velocity += force;
+
+            //Return the force to 0
+            force = 0;
+
+            // Simulate friction to reduce the velocity over time (inertia)
+            velocity *= friction;
+
+            // Update the position of the div based on velocity
+            let currentTop = parseFloat(window.getComputedStyle(moveableDiv).top);
+            currentTop += velocity;
+
+            // Update the top position of the div
+            moveableDiv.style.top = currentTop + 'px';
+
+            // Log the current velocity for debugging
+            console.log('Current velocity:', velocity);
+
+            // If the velocity is small enough, stop the animation loop
+            if (Math.abs(velocity) > 0.1) {
+                requestAnimationFrame(update); // Continue updating
+            } else {
+                velocity = 0; // Stop the movement when velocity is almost zero
+                console.log("Stopped!");
+            }
+        }
+
+        // Listen for the scroll event to apply force
+        window.addEventListener('wheel', (event) => {
+            // Apply force based on the scroll direction (deltaY is negative for scrolling up)
+            force = (event.deltaY * acceleration);
+
+            // Start the update loop if it's not already running
+            if (Math.abs(velocity) <= 0.1) {
+                requestAnimationFrame(update);
+            }
+        });
+    </script>
+
+</body>
+</html>
