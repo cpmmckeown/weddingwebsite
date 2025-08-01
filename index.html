@@ -14,12 +14,13 @@
             <li><a href="#section-2">Our Story</a></li>
             <li><a href="#section-3">Event Details</a></li>
             <li><a href="#section-4">RSVP</a></li>
+            <li><button onclick="toggleLanguage()">EN/FI</button></li>
         </ul>
     </nav>
 
     <!-- Parallax Background -->
     <div class="parallax">
-        <img src="https://raw.githubusercontent.com/cpmmckeown/weddingwebsite/refs/heads/main/Images/liina2SMOL.JPG" alt="Wedding Background">
+        <img src="https://github.com/cpmmckeown/weddingwebsite/raw/refs/heads/main/Images/us1.webp" alt="Wedding Background">
     </div>
 
         <!-- New wrapper -->
@@ -29,8 +30,8 @@
         <!-- Section 1 -->
         <div class="floating-section" id="section-1">
             <div class="section-content">
-                <h2>Welcome to Our Wedding</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+                <h2 data-en="Welcome to Our Wedding" data-fr="Bienvenue">Welcome to Our Wedding</h2>
+                <p data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio." data-fr="Bienvenue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
             </div>
         </div>
 
@@ -65,5 +66,16 @@
     </div>
 
     <script src="script.js"></script>
+    <!--Language Toggle-->
+    <script>
+    
+    let currentLang = 'en';
+
+    function toggleLanguage() 
+    {
+        currentLang = currentLang === 'en' ? 'fr' : 'en';
+        document.querySelectorAll('[data-en]').forEach(el => {el.innerHTML = el.getAttribute(`data-${currentLang}`);});
+    }
+    </script>
 </body>
 </html>

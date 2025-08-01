@@ -10,10 +10,27 @@ html{scroll-behavior: smooth}
 /* Body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    color: #f9f9f9;
+    background-color: #e3d3c5; /*bone*/
+    color: #f9f9f9; /*main font colour*/
     height: 100%;
     
+}
+
+a {color: #62793A;}
+
+button{
+    font-family: 'Arial', sans-serif;
+    background-color: #e3d3c5; /*bone*/
+    color: #2d2a27; /*Dark Grey*/
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+button:hover {
+    color: #62793A; /* Accent color on hover */
 }
 
 /* Fixed Navigation Bar */
@@ -23,7 +40,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f4dada;
+    background-color: #e3d3c5; /*bone*/
     padding: 10px 0;
     z-index: 100;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for navbar */
@@ -40,7 +57,7 @@ body {
 }
 
 .navbar ul li a {
-    color: #363537;
+    color: #2d2a27; /*Dark Grey*/
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -48,7 +65,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #f9f9f9; /* Accent color on hover */
+    color: #62793A; /* Accent color on hover */
 }
 
 /* Parallax Background */
@@ -112,17 +129,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f4dada;
-    color: #363537;
+    background-color: #e3d3c5; /*bone*/
+    color: #2d2a27; /*Dark Grey*/
 }
 
 #section-4{
-    background-color: #f4dada;
-    color: #363537;
+    background-color: #e3d3c5; /*bone*/
+    color: #2d2a27; /*Dark Grey*/
 }
 
 .LSimage {
-    background: url('https://raw.githubusercontent.com/cpmmckeown/weddingwebsite/refs/heads/main/Images/liinaSMOL.JPG') no-repeat center center;
+    background: url('https://github.com/cpmmckeown/weddingwebsite/raw/refs/heads/main/Images/us2.webp') no-repeat center center;
     background-size: cover;
     width: 50vw;
     height: 50vh;
