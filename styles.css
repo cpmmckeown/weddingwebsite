@@ -9,6 +9,7 @@ html{scroll-behavior: smooth}
 
 /* Body */
 body {
+    font-size: 12px;
     font-family: 'Arial', sans-serif;
     background-color: #e3d3c5; /*bone*/
     color: #f9f9f9; /*main font colour*/
@@ -24,7 +25,7 @@ button{
     color: #2d2a27; /*Dark Grey*/
     border: none;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -59,7 +60,7 @@ button:hover {
 .navbar ul li a {
     color: #2d2a27; /*Dark Grey*/
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
     transition: color 0.3s ease;
 }
