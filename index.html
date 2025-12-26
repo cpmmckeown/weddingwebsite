@@ -32,8 +32,8 @@
     <!-- Section 1 -->
         <div class="floating-section" id="section-1">
             <div class="section-content">
-                <h2 data-en="Welcome to Our Wedding" data-fr="Bienvenue">Welcome to Our Wedding</h2>
-                <p data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio." data-fr="Bienvenue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+                <h2 data-en="Welcome to Our Wedding" data-fi="Bienvenue">Welcome to Our Wedding</h2>
+                <p data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio." data-fi="Terve!">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
             </div>
         </div>
 
@@ -44,8 +44,8 @@
             <!--Right Column Content-->
             </div>    
             <div class="section-content">
-                <h2>The Venue</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+                <h2 data-en="The Venue" data-fi="Venui">The Venue</h2>
+                <p data-en="The Venue is here and it's awesome." data-fi="Saavu paikalle omalla autolla, bussilla, moottoripyörällä tai polkupyörällä ja anna seikkailun alkaa. Helsingistä ja Kotkasta pääset bussilla moottoritietä pitkin liikennöivillä pikavuoroilla, jotka pysähtyvät Ahvenkosken pikavuoropysäkillä moottoritien liittymässä nro 68. Aikataulut löydät kätevästi Matkahuollon ja Onnibussin verkkosivuilta. Muista valita määräpaikaksi Ruotsinpyhtää liittymä 68, Loviisa. Saavuttuasi Ahvenkosken pikavuoropysäkille, on sinulla vielä noin 5 kilometrin matka ruukkiin, jonka voit tulla esim. taksilla. Koulupäivinä pääset Loviisan keskustasta suoralla bussivuorolla ruukkiin.">The Venue is here and it's awesome.</p>
             </div>
         </div>
 
@@ -79,7 +79,7 @@
 
     function toggleLanguage() 
     {
-        currentLang = currentLang === 'en' ? 'fr' : 'en';
+        currentLang = currentLang === 'en' ? 'fi' : 'en';
         document.querySelectorAll('[data-en]').forEach(el => {el.innerHTML = el.getAttribute(`data-${currentLang}`);});
     }
     </script>
