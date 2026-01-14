@@ -187,10 +187,13 @@ button:hover {
 .floating-section-two-column {
     display: grid;
     grid-template-columns: 40% 40%;
+    height: fit-content;
     justify-content: space-between;
     align-items: center;
     background-color: #EAEBE4; /*green*/
     color: #2d2a27; /*Dark Grey*/
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 /*Trying to switch to vertical rows instead of horizontal columns*/
 @media only screen and (max-width: 800px){
