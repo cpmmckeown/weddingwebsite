@@ -1,3 +1,9 @@
+function toggleLanguage() 
+    {
+        currentLang = currentLang === 'en' ? 'fi' : 'en';
+        document.querySelectorAll('[data-en]').forEach(el => {el.innerHTML = el.getAttribute(`data-${currentLang}`);});
+    }
+
 // Smooth scroll variables
 
 let targetScroll = 0;

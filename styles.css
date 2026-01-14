@@ -34,7 +34,7 @@ h2
 
 /* Body */
 body {
-    font-size: 12px;
+    
     font-family: 'Cormorant', sans-serif;
     background-color: #EAEBE4; /*greeny*/
     color: #f9f9f9; /*main font colour*/
@@ -132,6 +132,21 @@ button:hover {
     
 }
 
+#section-1
+{
+    
+    height:50%;
+}
+
+/*I want a media rule that changes the height to 70% when screen is <600px*/
+@media only screen and (max-width: 800px){
+#section-1
+{
+  height: 80%;
+ 
+}
+}
+
 /* Section Style */
 .floating-section, .floating-section-two-column {
     justify-content: center; /* horizontal centering */
@@ -144,10 +159,18 @@ button:hover {
 
 }
 
+/*Makes the intro look nice and even*/
 .floating-section
 {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 15% 35%;
+}
+
+@media only screen and (max-width: 800px){
+.floating-section
+{
+    grid-template-columns: 20% 80%;
+}
 }
 
 .floating-section h2, .floating-section-two-column h2 {
@@ -162,13 +185,22 @@ button:hover {
 
 /* Two-Column Section */
 .floating-section-two-column {
-    display: flex;
+    display: grid;
+    grid-template-columns: 40% 40%;
     justify-content: space-between;
     align-items: center;
     background-color: #EAEBE4; /*green*/
     color: #2d2a27; /*Dark Grey*/
 }
-
+/*Trying to switch to vertical rows instead of horizontal columns*/
+@media only screen and (max-width: 800px){
+    .floating-section-two-column
+    {
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+}
 #section-4{
     background-color: #EAEBE4; /*green*/
     color: #2d2a27; /*Dark Grey*/
@@ -183,9 +215,15 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.section-content {
-    width: 55%;
-    height: 50%;
+@media only screen and (max-width: 800px){
+    .LSimage{width:auto;}
+}
+
+.flower
+{
+position: relative;
+  top: 4%;
+  z-index: -1;
 }
 
 /* Scroll Effects */

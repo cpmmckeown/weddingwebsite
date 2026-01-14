@@ -31,13 +31,19 @@
         
     <!-- Section 1 -->
         <div class="floating-section" id="section-1">
-        <img src="SeeThroughMuchaflower.svg"></img>
-            <div class="section-content">
+        <img class="flower" src="SeeThroughMuchaflower.svg"></img>
+            <div class="section-content" id="section-1">
                 <h2 data-en="Welcome to Our Wedding" data-fi="Terve!">Weclome to Our Wedding</h2>
                 <p data-en="You are warmly invited to celebrate the wedding of Eveliina Kuitunen and Conor McKeown on Saturday the 25th of July in the idyllic landscape of the Strömfors Ironworks (Strömforsin Ruukki).The ceremony will begin at Ruotsinpyhtää Church at 4pm; we recommend arriving slightly in advance.<br><br>This will be followed by a reception in the nearby Strömfors Hall (Strömforsin Sali).We look forward to welcoming you on this special day! You can confirm your attendance on our RSVP page, where you will also find a contact form for any questions." 
-                  data-fi="Tervetuloa viettämään häitämme lauantaina 25. heinäkuuta Strömforsin Ruukin idyllisissä maisemissa. Toisensa saavat Eveliina Kuitunen ja Conor McKeown. Siunaustilaisuus alkaa Ruotsinpyhtään kirkossa 16:00, joten suosittelemme saapumista hieman etuajassa. Tätä seuraa juhla viereisessä Strömforsin Salissa. Toivottavasti pääsette juhlimaan kanssamme! Voit ilmoittaa tästä RSVP-sivulla, mistä löytyy myös yhteydenottolomake.">
+                data-fi="Tervetuloa viettämään häitämme lauantaina 25. heinäkuuta Strömforsin Ruukin idyllisissä maisemissa. Toisensa saavat Eveliina Kuitunen ja Conor McKeown. Siunaustilaisuus alkaa Ruotsinpyhtään kirkossa 16:00, joten suosittelemme saapumista hieman etuajassa.<br><br> Tätä seuraa juhla viereisessä Strömforsin Salissa. Toivottavasti pääsette juhlimaan kanssamme! Voit ilmoittaa tästä RSVP-sivulla, mistä löytyy myös yhteydenottolomake.">
+                You are warmly invited to celebrate the wedding of Eveliina Kuitunen and Conor McKeown on Saturday the 25th of July in the idyllic landscape of the Strömfors Ironworks (Strömforsin Ruukki).The ceremony will begin at Ruotsinpyhtää Church at 4pm; we recommend arriving slightly in advance.<br><br>This will be followed by a reception in the nearby Strömfors Hall (Strömforsin Sali).We look forward to welcoming you on this special day! You can confirm your attendance on our RSVP page, where you will also find a contact form for any questions.
+                </p>
+                <!--
+                <p data-en="You are warmly invited to celebrate the wedding of Eveliina Kuitunen and Conor McKeown on Saturday the 25th of July in the idyllic landscape of the Strömfors Ironworks (Strömforsin Ruukki).The ceremony will begin at Ruotsinpyhtää Church at 4pm; we recommend arriving slightly in advance.<br><br>This will be followed by a reception in the nearby Strömfors Hall (Strömforsin Sali).We look forward to welcoming you on this special day! You can confirm your attendance on our RSVP page, where you will also find a contact form for any questions." 
+                  data-fi="Tervetuloa viettämään häitämme lauantaina 25. heinäkuuta Strömforsin Ruukin idyllisissä maisemissa. Toisensa saavat Eveliina Kuitunen ja Conor McKeown. Siunaustilaisuus alkaa Ruotsinpyhtään kirkossa 16:00, joten suosittelemme saapumista hieman etuajassa.<br><br> Tätä seuraa juhla viereisessä Strömforsin Salissa. Toivottavasti pääsette juhlimaan kanssamme! Voit ilmoittaa tästä RSVP-sivulla, mistä löytyy myös yhteydenottolomake.">
                   You are warmly invited to celebrate the wedding of Eveliina Kuitunen and Conor McKeown on Saturday the 25th of July in the idyllic landscape of the Strömfors Ironworks (Strömforsin Ruukki). The ceremony will begin at Ruotsinpyhtää Church at 4pm; we recommend arriving slightly in advance.<br><br>This will be followed by a reception in the nearby Strömfors Hall (Strömforsin Sali).We look forward to welcoming you on this special day! You can confirm your attendance on our RSVP page, where you will also find a contact form for any questions.
                   </p>
+                  -->
             </div>
         </div>
 
@@ -81,11 +87,7 @@
     
     let currentLang = 'en';
 
-    function toggleLanguage() 
-    {
-        currentLang = currentLang === 'en' ? 'fi' : 'en';
-        document.querySelectorAll('[data-en]').forEach(el => {el.innerHTML = el.getAttribute(`data-${currentLang}`);});
-    }
+    
     </script>
 </body>
 </html>
