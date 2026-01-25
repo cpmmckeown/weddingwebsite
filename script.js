@@ -4,7 +4,7 @@ function toggleLanguage()
         document.querySelectorAll('[data-en]').forEach(el => {el.innerHTML = el.getAttribute(`data-${currentLang}`);});
     }
 
-// Smooth scroll variables
+/* Smooth scroll variables
 
 let targetScroll = 0;
 let currentScroll = 0;
@@ -73,3 +73,4 @@ function init() {
 
 window.addEventListener('resize', setBodyHeight);
 window.addEventListener('DOMContentLoaded', init);
+*/

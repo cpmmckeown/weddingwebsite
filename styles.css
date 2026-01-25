@@ -39,10 +39,15 @@ body, button{
     background-color: #EAEBE4; /*greeny*/
     color: #f9f9f9; /*main font colour*/
     height: 100%;
+
     
 }
 
-a {color: #62793A;}
+/*ADJUSTING LINKS COLOURS*/
+a {color: #f9f9f9;}
+
+.floating-section-two-column a
+{color: #62793A; }
 
 button{
 color: #2d2a27; /*Dark Grey*/
@@ -94,12 +99,12 @@ button:hover {
 
 /* Parallax Background */
 .parallax {
+
     position: relative;
     overflow: hidden;
 }
 
 .parallax img {
-    filter: brightness(50%);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -111,7 +116,9 @@ button:hover {
 
 #section-1
 {
+  text-shadow: 1px 2px 5px #000;
     grid-auto-rows: minmax(min-content, max-content);
+
 }
 
 /* Section Style */
@@ -120,9 +127,11 @@ button:hover {
     align-items: center;     /* vertical centering */
     text-align: center;      /* optional: center text inside the section-content */
 	position: relative;
-	background: rgba(89, 88, 88, 0.31);
+backdrop-filter: blur(10px);
+background-color: rgba(10, 10, 0, 0.45);
 	padding: 20px;
 	grid-auto-rows: minmax(min-content, max-content);
+  color: #f9f9f9;
 
 }
 
@@ -144,7 +153,7 @@ button:hover {
 /*Consistent H2 Resizing*/
 .main-content, .floating-section h2, .floating-section-two-column, .floating-section-two-column-flipped h2 {
     font-size: 2rem;
-    margin-bottom: 15px;
+
 }
 
 .floating-section p, .floating-section-two-column, .floating-section-two-column-flipped p {
@@ -152,7 +161,7 @@ button:hover {
     
 }
 
-/* Two-Column Section */
+/* Two-Column Section With Background */
 .floating-section-two-column {
     display: grid;
     grid-template-columns: 40% 40%;
@@ -169,8 +178,8 @@ padding-left: 5%;
 
 /* Two-Column Section Flipped */
 .floating-section-two-column-flipped {
-Background-color: transparent; 
-color: #EAEBE4;
+background-color: rgba(10, 10, 0, 0.45);
+color: #F9F9F9;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-auto-rows: minmax(min-content, max-content);
@@ -178,7 +187,7 @@ grid-column-gap:5%;
     justify-content: space-between;
     align-items: center;
     padding: 4%;
-text-shadow: 2px 2px 8px #000000;
+  text-shadow: 1px 2px 5px #000;
 }
 
 
@@ -203,6 +212,7 @@ text-shadow: 2px 2px 8px #000000;
 position: relative;
   top: 4%;
   z-index: -1;
+  filter: brightness(3.2);
 }
 
 /* Scroll Effects */
@@ -243,8 +253,12 @@ padding: 20%;
 text-align: center;
 }
 
-/*RESIZING RULES FOR PHONES*/
+/**************RESIZING RULES FOR PHONES*********************/
 @media only screen and (max-width: 800px){
+
+.flower
+{ filter: brightness(0.5);}
+
 .parallax img{
 height: 1000px;
 }
@@ -256,7 +270,6 @@ height: 1000px;
 #section-1
 {
   grid-auto-rows: minmax(min-content, max-content);
- 
 }
  .LSimage{width:300px;}
 
