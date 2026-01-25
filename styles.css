@@ -132,7 +132,7 @@ button:hover {
 
 #section-1
 {
-    height:fit-content;
+    grid-auto-rows: minmax(min-content, max-content);
 }
 
 /* Section Style */
@@ -143,7 +143,7 @@ button:hover {
 	position: relative;
 	background: rgba(89, 88, 88, 0.31);
 	padding: 20px;
-	height: 90vh;
+	grid-auto-rows: minmax(min-content, max-content);
 
 }
 
@@ -177,7 +177,7 @@ button:hover {
 .floating-section-two-column {
     display: grid;
     grid-template-columns: 40% 40%;
-    height: fit-content;
+    grid-auto-rows: minmax(min-content, max-content);
     justify-content: space-between;
     align-items: center;
     background-color: #EAEBE4; /*green*/
@@ -194,7 +194,7 @@ Background-color: transparent;
 color: #EAEBE4;
     display: grid;
     grid-template-columns: 40% 60%;
-    height: fit-content;
+    grid-auto-rows: minmax(min-content, max-content);
 grid-column-gap:5%;
     justify-content: space-between;
     align-items: center;
@@ -259,7 +259,7 @@ font-size: 0.7em;
 display: grid;
 grid-template-columns: 100%;
 grid-row-gap: 5%;
-height: fit-content;
+grid-auto-rows: minmax(min-content, max-content);
 padding: 20%;
 text-align: center;
 }
@@ -276,7 +276,7 @@ height: 1000px;
 
 #section-1
 {
-  height: fit-content;
+  grid-auto-rows: minmax(min-content, max-content);
  
 }
  .LSimage{width:auto;}
@@ -286,7 +286,7 @@ height: 1000px;
         display: grid;
         grid-template-columns: 100%;
 	grid-row-gap: 5%;
-	height: fit-content;
+	grid-auto-rows: minmax(min-content, max-content);
 padding-bottom: 20%;
         
     }
@@ -295,7 +295,7 @@ padding-bottom: 20%;
         display: grid;
         grid-template-columns: 100%;
 	grid-row-gap: 5%;
-        height: fit-content;
+        grid-auto-rows: minmax(min-content, max-content);
 padding-bottom: 20%;
     }
 }
