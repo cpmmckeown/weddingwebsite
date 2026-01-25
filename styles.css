@@ -246,6 +246,7 @@ grid-row-gap: 5%;
 grid-auto-rows: minmax(min-content, max-content);
 padding: 20%;
 text-align: center;
+padding-bottom:500px;
 }
 
 /**************RESIZING RULES FOR PHONES*********************/
@@ -270,24 +271,15 @@ height: 1000px;
 
  .floating-section-two-column-flipped, .floating-section-two-column 
     {
-/*OLD IOS SOLUTION
-        display: grid;
-        grid-template-columns: 100%;
-	grid-row-gap: 5%;
-	grid-auto-rows: minmax(min-content, max-content);
-	padding-bottom: 20%;
-*/
-  
-  align-items: center;
-  display: flex;
-flex-direction: column;
-  justify-content: center;
-  line-height: 1.5;
-  padding-bottom: 50px;
-  position: relative;
-
-
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 1.5;
+	padding-bottom: 50px;
+	position: relative;
     }
+
 }
 
 
