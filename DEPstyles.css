@@ -109,6 +109,27 @@ button:hover {
     z-index: -1; /* Ensures the image stays behind the content */
 }
 
+#scroll-wrapper {
+     /* Scroll container for transform-based smooth scroll */
+     position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+      /* Optional Visual Flourishes */ 
+      
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Main Content */
+.main-content {
+    will-change: transform;
+    
+}
+
 #section-1
 {
     grid-auto-rows: minmax(min-content, max-content);
