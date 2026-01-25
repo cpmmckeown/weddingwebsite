@@ -266,8 +266,8 @@ text-align: center;
 
 /*RESIZING RULES*/
 @media only screen and (max-width: 800px){
-.parallax{
-height: 2000px;
+.parallax img{
+height: 1000px;
 }
 
 .button{font-size:0.5rem;}
