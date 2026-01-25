@@ -33,7 +33,7 @@ h2
 }
 
 /* Body */
-body {
+body, button{
     
     font-family: 'Cormorant', sans-serif;
     background-color: #EAEBE4; /*greeny*/
@@ -45,16 +45,14 @@ body {
 a {color: #62793A;}
 
 button{
-    font-family: 'Arial', sans-serif;
-    background-color: #e3d3c5; /*bone*/
-    color: #2d2a27; /*Dark Grey*/
+color: #2d2a27; /*Dark Grey*/
     border: none;
     text-decoration: none;
     font-size: 1em;
-    font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
 }
+
 button:hover {
     color: #62793A; /* Accent color on hover */
 }
@@ -82,8 +80,8 @@ button:hover {
     margin: 0 20px;
 }
 
-.navbar ul li a {
-    color: #2d2a27; /*Dark Grey*/
+.navbar ul li a, button {
+    color: #2d2a27; /*text color Dark Grey*/
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
@@ -91,7 +89,7 @@ button:hover {
 }
 
 .navbar ul li a:hover {
-    color: #62793A; /* Accent color on hover */
+    color: #62793A; /* Accent color on hover same as button*/
 }
 
 /* Parallax Background */
@@ -134,21 +132,11 @@ button:hover {
 
 #section-1
 {
-    
     height:fit-content;
 }
 
-/*I want a media rule that changes the height to 70% when screen is <600px*/
-@media only screen and (max-width: 800px){
-#section-1
-{
-  height: fit-content;
- 
-}
-}
-
 /* Section Style */
-.floating-section, .floating-section-two-column {
+.floating-section, .floating-section-two-column, .floating-section-two-column-flipped {
     justify-content: center; /* horizontal centering */
     align-items: center;     /* vertical centering */
     text-align: center;      /* optional: center text inside the section-content */
@@ -199,16 +187,7 @@ button:hover {
 padding-right: 5%;
 padding-left: 5%;
 }
-/*Trying to switch to vertical rows instead of horizontal columns*/
-@media only screen and (max-width: 800px){
-    .floating-section-two-column-flipped, .floating-section-two-column 
-    {
-        display: grid;
-        grid-template-columns: 100%;
-	grid-row-gap: 5%;
-        
-    }
-}
+
 /* Two-Column Section Flipped */
 .floating-section-two-column-flipped {
 Background-color: transparent; 
@@ -239,9 +218,6 @@ text-shadow: 2px 2px 8px #000000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (max-width: 800px){
-    .LSimage{width:auto;}
-}
 
 .flower
 {
@@ -275,4 +251,48 @@ section {
 
 .scroll-to-top.show {
     display: flex;
+}
+
+.rsvp
+{
+font-size: 0.7em;
+display: grid;
+grid-template-columns: 100%;
+grid-row-gap: 5%;
+height: fit-content;
+padding: 20%;
+text-align: center;
+}
+
+/*RESIZING RULES*/
+@media only screen and (max-width: 800px){
+
+.button{font-size:0.5rem;}
+
+.navbar{font-size:0.5rem;}
+
+#section-1
+{
+  height: fit-content;
+ 
+}
+ .LSimage{width:auto;}
+
+ .floating-section-two-column-flipped 
+    {
+        display: grid;
+        grid-template-columns: 100%;
+	grid-row-gap: 5%;
+	height: fit-content;
+padding-bottom: 20%;
+        
+    }
+.floating-section-two-column 
+    {
+        display: grid;
+        grid-template-columns: 100%;
+	grid-row-gap: 5%;
+        height: fit-content;
+padding-bottom: 20%;
+    }
 }
