@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Pirata+One&display=swap');
 
 @font-face {
@@ -166,14 +165,11 @@ background-color: rgba(10, 10, 0, 0.45);
     display: grid;
     grid-template-columns: 40% 40%;
     grid-auto-rows: minmax(min-content, max-content);
-    justify-content: space-between;
+    grid-column-gap:5%;
     align-items: center;
     background-color: #EAEBE4; /*green*/
     color: #2d2a27; /*Dark Grey*/
-    padding-top: 10%;
-    padding-bottom: 10%;
-padding-right: 5%;
-padding-left: 5%;
+    padding: 4%;
 }
 
 /* Two-Column Section Flipped */
@@ -181,10 +177,9 @@ padding-left: 5%;
 background-color: rgba(10, 10, 0, 0.45);
 color: #F9F9F9;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 40%;
     grid-auto-rows: minmax(min-content, max-content);
-grid-column-gap:5%;
-    justify-content: space-between;
+    grid-column-gap:5%;
     align-items: center;
     padding: 4%;
   text-shadow: 1px 2px 5px #000;
@@ -200,7 +195,7 @@ grid-column-gap:5%;
 .LSimage {
     background: url('https://github.com/cpmmckeown/weddingwebsite/raw/refs/heads/main/Images/us2COMP.webp') no-repeat center center;
     background-size: cover;
-    width: 50vw;
+    width: 100%;
     height: 50vh;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -271,7 +266,7 @@ height: 1000px;
 {
   grid-auto-rows: minmax(min-content, max-content);
 }
- .LSimage{width:300px;}
+
 
  .floating-section-two-column-flipped, .floating-section-two-column 
     {
