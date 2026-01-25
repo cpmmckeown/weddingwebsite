@@ -95,7 +95,6 @@ button:hover {
 /* Parallax Background */
 .parallax {
     position: relative;
-height: 100svh;
     overflow: hidden;
 }
 
@@ -268,7 +267,7 @@ text-align: center;
 /*RESIZING RULES*/
 @media only screen and (max-width: 800px){
 .parallax{
-background-attachment: scroll !important;
+height: 2000px;
 }
 
 .button{font-size:0.5rem;}
