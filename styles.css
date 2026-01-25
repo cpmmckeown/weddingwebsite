@@ -127,6 +127,7 @@ button:hover {
     text-align: center;      /* optional: center text inside the section-content */
 	position: relative;
 backdrop-filter: blur(10px);
+ -webkit-backdrop-filter: blur(10px);
 background-color: rgba(10, 10, 0, 0.45);
 	padding: 20px;
 	grid-auto-rows: minmax(min-content, max-content);
