@@ -95,6 +95,7 @@ button:hover {
 /* Parallax Background */
 .parallax {
     position: relative;
+height: 100svh;
     overflow: hidden;
 }
 
