@@ -135,14 +135,14 @@ button:hover {
 #section-1
 {
     
-    height:50%;
+    height:fit-content;
 }
 
 /*I want a media rule that changes the height to 70% when screen is <600px*/
 @media only screen and (max-width: 800px){
 #section-1
 {
-  height: 80%;
+  height: fit-content;
  
 }
 }
@@ -164,6 +164,7 @@ button:hover {
 {
     display: grid;
     grid-template-columns: 15% 35%;
+   
 }
 
 @media only screen and (max-width: 800px){
@@ -173,13 +174,14 @@ button:hover {
 }
 }
 
-.floating-section h2, .floating-section-two-column h2 {
+/*Consistent H2 Resizing*/
+.main-content, .floating-section h2, .floating-section-two-column, .floating-section-two-column-flipped h2 {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-.floating-section p, .floating-section-two-column p {
-    font-size: 1.2rem;
+.floating-section p, .floating-section-two-column, .floating-section-two-column-flipped p {
+    font-size: 1.4rem;
     
 }
 
@@ -194,16 +196,35 @@ button:hover {
     color: #2d2a27; /*Dark Grey*/
     padding-top: 10%;
     padding-bottom: 10%;
+padding-right: 5%;
+padding-left: 5%;
 }
 /*Trying to switch to vertical rows instead of horizontal columns*/
 @media only screen and (max-width: 800px){
-    .floating-section-two-column
+    .floating-section-two-column-flipped, .floating-section-two-column 
     {
         display: grid;
         grid-template-columns: 100%;
+	grid-row-gap: 5%;
         
     }
 }
+/* Two-Column Section Flipped */
+.floating-section-two-column-flipped {
+Background-color: transparent; 
+color: #EAEBE4;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: fit-content;
+grid-column-gap:5%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+text-shadow: 2px 2px 8px #000000;
+}
+
+
+
 #section-4{
     background-color: #EAEBE4; /*green*/
     color: #2d2a27; /*Dark Grey*/

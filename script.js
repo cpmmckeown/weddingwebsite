@@ -8,7 +8,7 @@ function toggleLanguage()
 
 let targetScroll = 0;
 let currentScroll = 0;
-let ease = 0.1;
+let ease = 0.07;
 
 const scrollWrapper = document.getElementById('scroll-wrapper');
 const mainContent = document.querySelector('.main-content');
@@ -26,11 +26,10 @@ function setBodyHeight() {
 function smoothScroll() {
     targetScroll = window.scrollY;
     currentScroll += (targetScroll - currentScroll) * ease;
-
     mainContent.style.transform = `translateY(-${currentScroll}px)`;
-
     requestAnimationFrame(smoothScroll);
 }
+
 
 // Handle anchor link clicks manually
 function setupAnchorNavigation() {
