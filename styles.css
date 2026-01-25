@@ -258,28 +258,30 @@ height: 1000px;
   grid-auto-rows: minmax(min-content, max-content);
  
 }
- .LSimage{width:auto;}
+ .LSimage{width:300px;}
 
  .floating-section-two-column-flipped, .floating-section-two-column 
     {
+/*OLD IOS SOLUTION
         display: grid;
         grid-template-columns: 100%;
 	grid-row-gap: 5%;
 	grid-auto-rows: minmax(min-content, max-content);
 	padding-bottom: 20%;
-        
-    }
-}
-
-
-/*POSSIBLE RESIZE ON IOS SOLUTION
-.container {
+*/
+  
   align-items: center;
   display: flex;
+flex-direction: column;
   justify-content: center;
   line-height: 1.5;
   padding-bottom: 50px;
   position: relative;
+
+
+    }
 }
 
-*/
+
+
+
