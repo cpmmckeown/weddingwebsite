@@ -113,6 +113,9 @@ button:hover {
     z-index: -1; /* Ensures the image stays behind the content */
 }
 
+#faq
+{background-color:dimgray;}
+
 #section-1
 {
   text-shadow: 1px 2px 5px #000;
